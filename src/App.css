@@ -1,7 +1,11 @@
-.app {
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
 }
 
 .app-wrapper {
@@ -17,49 +21,9 @@
  grid-gap: 10px;
 }
 
-.header {
- grid-area: header;
- padding: 0 15px;
- background-color: #181818;
-
- display: flex;
- align-items: center;
- justify-content: space-between;
-
- color: white;
-}
-
-.header__menu > a + a {
-  margin-left: 20px;
-}
-
-.navigation {
- grid-area: navigation;
- background-color: rgb(88, 90, 107);
-
- display: flex;
- justify-content: space-around;
- align-items: center;
-}
-
-.navigation__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-.navigation__box > img {
-  object-fit: cover;
-  width: 100%;
-}
 
 
-.content {
- grid-area: content; 
- background-color: rgb(231, 231, 236);
- height: 75vh;
 
- text-align: center;
-}
+
+
 
