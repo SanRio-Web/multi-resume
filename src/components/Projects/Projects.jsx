@@ -9,6 +9,7 @@ const Projects = () => {
         <Project number={'1'}/>
         <Project number={'2'}/>
         <Project number={'3'}/>
+        <Project number={'4'}/>
       </div>
     </>
   );
