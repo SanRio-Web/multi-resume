@@ -1,15 +1,14 @@
-import Project from '../Project/Project';
+import ProjectsList from '../ProjectsList/ProjectsList';
 import style from './Projects.module.css'
-
 
 const Projects = () => {
   return (
     <>
-      <div className={style.projects__list}>
-        <Project number={'1'}/>
-        <Project number={'2'}/>
-        <Project number={'3'}/>
-        <Project number={'4'}/>
+      <div>
+        <h1>Future Projects!</h1>
+        <p style={{marginBottom: 25}}>Projects featured today by our curators</p>
+
+        <ProjectsList/>
       </div>
     </>
   );

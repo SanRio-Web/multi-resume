@@ -8,22 +8,23 @@
   width: 100%;
 }
 
-.app-wrapper {
- display: grid;
+.app__wrapper {
+  display: grid;
 
- grid-template-areas: 
- "header  "
- "navigation "
- "content  ";
+  grid-template-areas:
+    "header  "
+    "navigation "
+    "content  ";
 
- grid-template-rows: 80px 90px auto ;
- grid-template-columns:  12fr ;
- grid-gap: 10px;
+  grid-template-rows: 80px 90px auto;
+  grid-template-columns: 12fr;
+  grid-gap: 10px;
 }
 
+.app__content {
+  grid-area: content;
+  background-color: rgb(231, 231, 236);
+  height: 75vh;
 
-
-
-
-
-
+  text-align: center;
+}

@@ -1,16 +1,43 @@
-import style from './Header.module.css'
+import style from "./Header.module.css";
+import { NavLink } from "react-router";
 
 const Header = () => {
   return (
     <>
       <header className={style.header}>
-        {/* <img alt="logo" /> */}
         <div>Logo</div>
 
         <div className={style.header__menu}>
-          <a className={`${style.links} ${style.active}`}>Profile</a>
-          <a className={`${style.links}`}>Projects</a>
-          <a className={`${style.links}`}>Aboute me</a>
+          <div className={style.header__link}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
+            >
+              Profile
+            </NavLink>
+          </div>
+          <div className={style.header__link}>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
+            >
+              Projects
+            </NavLink>
+          </div>
+          <div className={style.header__link}>
+            <NavLink
+              to="/aboute"
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
+            >
+              Aboute me
+            </NavLink>
+          </div>
         </div>
 
         <div className={style.header__auth}>
