@@ -1,12 +1,7 @@
-import style from './Profile.module.css'
-
+import style from "./Profile.module.css";
 
 const Profile = () => {
-  return (
-    <>
-        Profile
-    </>
-  );
+  return <>Profile</>;
 };
 
 export default Profile;

@@ -1,16 +1,14 @@
-import ProjectItem from '../ProjectItem/ProjectItem';
-import style from './ProjectsList.module.css'
+import ProjectItem from "../ProjectItem/ProjectItem";
+import style from "./ProjectsList.module.css";
 
+const ProjectsList = ({ projectsData }) => {
+  const ProjectElements = projectsData.map((el) => (
+    <ProjectItem key={el.id} data={el} />
+  ));
 
-const ProjectsList = () => {
   return (
     <>
-      <div className={style.projects__list}>
-        <ProjectItem number={'1'}/>
-        <ProjectItem number={'2'}/>
-        <ProjectItem number={'3'}/>
-        <ProjectItem number={'4'}/>
-      </div>
+      <div className={style.projects__list}>{ProjectElements}</div>
     </>
   );
 };

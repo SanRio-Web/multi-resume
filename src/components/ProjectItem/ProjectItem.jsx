@@ -1,10 +1,14 @@
-import style from './ProjectItem.module.css'
+import style from "./ProjectItem.module.css";
+import { NavLink } from "react-router";
 
-
-const ProjectItem = ({number}) => {
+const ProjectItem = ({ data }) => {
   return (
     <>
-      <div className={style.projects__item}>Project - {number}</div>
+      <div className={style.projects__item}>
+        <NavLink to={`/projects/${data.id}`}>
+          Project {data.id} - {data.title}
+        </NavLink>
+      </div>
     </>
   );
 };

@@ -1,14 +1,16 @@
-import ProjectsList from '../ProjectsList/ProjectsList';
-import style from './Projects.module.css'
+import ProjectsList from "../ProjectsList/ProjectsList";
+import style from "./Projects.module.css";
 
-const Projects = () => {
+const Projects = ({ projectsData }) => {
   return (
     <>
       <div>
         <h1>Future Projects!</h1>
-        <p style={{marginBottom: 25}}>Projects featured today by our curators</p>
+        <p style={{ marginBottom: 25 }}>
+          Projects featured today by our curators
+        </p>
 
-        <ProjectsList/>
+        <ProjectsList projectsData={projectsData} />
       </div>
     </>
   );

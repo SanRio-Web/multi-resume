@@ -30,12 +30,12 @@ const Header = () => {
           </div>
           <div className={style.header__link}>
             <NavLink
-              to="/aboute"
+              to="/chat"
               className={({ isActive }) =>
                 isActive ? style.active : undefined
               }
             >
-              Aboute me
+              Chat
             </NavLink>
           </div>
         </div>

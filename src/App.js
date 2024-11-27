@@ -5,7 +5,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Profile from "./components/Profile/Profile";
 import { BrowserRouter, Routes, Route } from "react-router";
 
-const App = () => {
+const App = ({ data }) => {
   return (
     <BrowserRouter>
       <div className="App">
@@ -16,7 +16,15 @@ const App = () => {
           <div className="app__content">
             <Routes>
               <Route path="/" element={<Profile />} />
-              <Route path="/projects" element={<Projects />} />
+              <Route
+                index
+                path="/projects"
+                element={<Projects projectsData={data.projects} />}
+              />
+              <Route
+                path="/projects/:id"
+                element={<Projects projectsData={data.projects} />}
+              />
             </Routes>
           </div>
         </div>
